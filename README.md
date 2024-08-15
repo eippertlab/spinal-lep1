@@ -4,4 +4,4 @@
 
 
 # spinal-lep1
-This is the code for Study 3 described in detail in a preprint on [bioRxiv](https://doi.org/10.1101/2022.12.05.519148). The data for this projet are available via [OpenNeuro](https://openneuro.org/).
+This is the code for Study 3 described in detail in a preprint on [bioRxiv](https://doi.org/10.1101/2022.12.05.519148). The data for this project are available via [OpenNeuro](https://openneuro.org/).
