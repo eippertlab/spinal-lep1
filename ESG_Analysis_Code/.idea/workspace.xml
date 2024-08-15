@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8832a8e8-5760-4841-8e63-c9a7df3053e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ESG_Analysis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotting/TimeCourse_EveryFourth_AfterCCA_GA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Archive/TimeCourse_EveryFourth_AfterCCA_GA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotting/TimeCourse_EveryFourth_AfterCCA_GA_Flip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting/TimeCourse_EveryFourth_AfterCCA_GA_Flip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotting/TimeCourse_Spatial_PrelimChosen_hpf30_Incl2pilot_FlipTimeAndSpat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting/TimeCourse_Spatial_PrelimChosen_hpf30_Incl2pilot_FlipTimeAndSpat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotting/TimeCourse_StackedSubjectsAfterCCA_Incl2pilot_Flip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting/TimeCourse_StackedSubjectsAfterCCA_Incl2pilot_Flip.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2kglBZ4TDd0pmyWGF7H2JjtlKTN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.TimeCourse_EveryFourth_AfterCCA_GA_Flip.executor": "Run",
+    "Python.TimeCourse_Spatial_PrelimChosen_hpf30_Incl2pilot_FlipTimeAndSpat.executor": "Run",
+    "Python.TimeCourse_StackedSubjectsAfterCCA_Incl2pilot_Flip.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/data/pt_02889/Emma/ESG_Analysis/ESG_Analysis_Code"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.TimeCourse_StackedSubjectsAfterCCA_Incl2pilot_Flip">
+    <configuration name="TimeCourse_EveryFourth_AfterCCA_GA_Flip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ESG_Analysis_Code" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Plotting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Plotting/TimeCourse_EveryFourth_AfterCCA_GA_Flip.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeCourse_Spatial_PrelimChosen_hpf30_Incl2pilot_FlipTimeAndSpat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ESG_Analysis_Code" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Plotting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Plotting/TimeCourse_Spatial_PrelimChosen_hpf30_Incl2pilot_FlipTimeAndSpat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeCourse_StackedSubjectsAfterCCA_Incl2pilot_Flip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ESG_Analysis_Code" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Plotting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Plotting/TimeCourse_StackedSubjectsAfterCCA_Incl2pilot_Flip.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.TimeCourse_StackedSubjectsAfterCCA_Incl2pilot_Flip" />
+        <item itemvalue="Python.TimeCourse_EveryFourth_AfterCCA_GA_Flip" />
+        <item itemvalue="Python.TimeCourse_Spatial_PrelimChosen_hpf30_Incl2pilot_FlipTimeAndSpat" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8832a8e8-5760-4841-8e63-c9a7df3053e8" name="Changes" comment="" />
+      <created>1723712966327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723712966327</updated>
+    </task>
+    <servers />
+  </component>
+</project>

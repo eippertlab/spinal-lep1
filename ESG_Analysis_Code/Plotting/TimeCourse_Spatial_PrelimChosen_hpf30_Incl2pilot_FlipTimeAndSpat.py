@@ -32,6 +32,8 @@ if __name__ == '__main__':
 
     erp_list = []
     spatial_list = []
+    # Create dataframe of each subjects evoked response
+    df = pd.DataFrame()
     for condition in conditions:
         subs_flipped = []
         for folder in folders:
@@ -44,7 +46,7 @@ if __name__ == '__main__':
                 subjects = np.arange(1, 6)  # Only first 5 subjects have pain
                 subject_ids = [f'esg{str(subject).zfill(2)}' for subject in subjects]
                 chosen = {'esg01': [1, False],
-                          'esg02': [1, False],
+                          'esg02': [1, True],
                           'esg03': [1, False],
                           'esg04': [1, False],
                           'esg05': [1, False]}
@@ -69,6 +71,9 @@ if __name__ == '__main__':
                     data = erp.apply_function(invert).get_data()
                 else:
                     data = erp.get_data()
+                if folder == 'main' and subject_id == 'esg01':
+                    df['Time'] = erp.times
+                df[f'{subject_id}'] = erp.data.reshape(-1)
 
                 erp_list.append(data)
 
@@ -115,6 +120,14 @@ if __name__ == '__main__':
                     plt.savefig(figure_path+f'{subject_id}_{condition}_noflip.png')
                 plt.close()
                 # plt.show()
+
+        # Write dataframe to excel
+        if not os.path.isfile(f'/data/pt_02889/main&pilot/SX_Data.xlsx'):
+            with pd.ExcelWriter(f'/data/pt_02889/main&pilot/SX_Data.xlsx', engine='openpyxl') as writer:
+                df.to_excel(writer, sheet_name='GATimeCourses')
+        else:
+            with pd.ExcelWriter(f'/data/pt_02889/main&pilot/SX_Data.xlsx', mode='a', engine='openpyxl') as writer:
+                df.to_excel(writer, sheet_name='GATimeCourses')
 
         # GA after CCA
         fig, axes = plt.subplots(1, 2, figsize=(12, 6))

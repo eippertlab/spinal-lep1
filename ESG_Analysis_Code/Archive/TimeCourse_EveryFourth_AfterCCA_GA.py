@@ -1,8 +1,3 @@
-#################################################################################################
-# Generate plots of phase synchrony between even-odd trials after CCA
-# https://jinhyuncheong.com/jekyll/update/2017/12/10/Timeseries_synchrony_tutorial_and_simulations.html
-#################################################################################################
-
 import os
 import mne
 from scipy.signal import hilbert

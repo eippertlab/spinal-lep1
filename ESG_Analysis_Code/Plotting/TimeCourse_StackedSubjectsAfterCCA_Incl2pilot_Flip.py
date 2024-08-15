@@ -1,7 +1,3 @@
-#################################################################################################
-# Generate plots of central electrodes
-#################################################################################################
-
 import os
 import mne
 import numpy as np
@@ -17,12 +13,14 @@ if __name__ == '__main__':
     peak_lat = 0.052
 
     # Testing laser stuff
-    sampling_rate = 1000  # Frequency to downsample to from original of 10kHz
+    sampling_rate = 1000
     conditions = ['pain']
 
     flip_list = []
     for condition in conditions:
         erp_list = []
+        # Create dataframe of each subjects evoked response
+        df = pd.DataFrame()
         for folder in folders:
             if folder == 'piloting':
                 subjects = np.arange(1, 3)  # Only first 2 being tested
@@ -64,6 +62,18 @@ if __name__ == '__main__':
                 else:
                     erp = epochs.pick('Cor1').average()
                 erp_list.append(erp.data.reshape(-1))
+
+                if folder == 'main' and subject_id == 'esg01':
+                    df['Time'] = erp.times
+                df[f'{subject_id}'] = erp.data.reshape(-1)
+
+        # Write dataframe to excel
+        if not os.path.isfile(f'/data/pt_02889/main&pilot/SX_Data.xlsx'):
+            with pd.ExcelWriter(f'/data/pt_02889/main&pilot/SX_Data.xlsx', engine='openpyxl') as writer:
+                df.to_excel(writer, sheet_name='StackedTimeCourses')
+        else:
+            with pd.ExcelWriter(f'/data/pt_02889/main&pilot/SX_Data.xlsx', mode='a', engine='openpyxl') as writer:
+                df.to_excel(writer, sheet_name='StackedTimeCourses')
 
         fig, axes = plt.subplots(len(erp_list), 1, figsize=(6, 12))
         for erp, axis in zip(erp_list, axes):

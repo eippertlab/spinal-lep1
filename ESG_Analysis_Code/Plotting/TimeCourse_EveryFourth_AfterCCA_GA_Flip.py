@@ -1,12 +1,8 @@
-#################################################################################################
-# Generate plots of phase synchrony between even-odd trials after CCA
-# https://jinhyuncheong.com/jekyll/update/2017/12/10/Timeseries_synchrony_tutorial_and_simulations.html
-#################################################################################################
-
 import os
 import mne
 from scipy.signal import hilbert
 import numpy as np
+import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from Functions.invert import invert
@@ -27,6 +23,8 @@ if __name__ == '__main__':
     hpf = 30  # Can be 30 or 1
 
     for condition in conditions:
+        # Create dataframe of each subjects evoked response
+        df = pd.DataFrame()
         even_list_1 = []
         odd_list_1 = []
         even_list_2 = []
@@ -94,6 +92,21 @@ if __name__ == '__main__':
                 odd_list_1.append(stim_erps_odd_1)
                 even_list_2.append(stim_erps_even_2)
                 odd_list_2.append(stim_erps_odd_2)
+
+                if folder == 'main' and subject_id == 'esg01':
+                    df['Time'] = epochs_stim_even_1.times
+                df[f'{subject_id}_even1'] = stim_erps_even_1
+                df[f'{subject_id}_odd1'] = stim_erps_odd_1
+                df[f'{subject_id}_even2'] = stim_erps_even_2
+                df[f'{subject_id}_odd2'] = stim_erps_odd_2
+
+        # Write dataframe to excel
+        if not os.path.isfile(f'/data/pt_02889/main&pilot/SX_Data.xlsx'):
+            with pd.ExcelWriter(f'/data/pt_02889/main&pilot/SX_Data.xlsx', engine='openpyxl') as writer:
+                df.to_excel(writer, sheet_name='EvenOddTimeCourses')
+        else:
+            with pd.ExcelWriter(f'/data/pt_02889/main&pilot/SX_Data.xlsx', mode='a', engine='openpyxl') as writer:
+                df.to_excel(writer, sheet_name='EvenOddTimeCourses')
 
         grand_average_even_1 = np.mean(even_list_1, axis=0)
         grand_average_odd_1 = np.mean(odd_list_1, axis=0)
